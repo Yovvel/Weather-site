@@ -1,0 +1,56 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+   <script src="script.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-4"> <!--row 1-->
+
+              <!--Humidity & Wind block-->
+              <div class="block text-center">
+                  <p class="redText">Humidity:</p>
+                  <p class="redText"id="pHumidity"> </p>
+                  <p class="redText"> </p>
+                  <p class="redText">Wind speed:</p>
+                  <p class="redText"id="pWindSpeed"> </p>
+                  <button id="buttonWindSpeed" onclick="mphToKph()">Speed in mph</button>
+                  <p class="redText"> </p>
+                  <p class="redText">Wind direction:</p>
+                  <p class="redText"id="pWindDirection"> </p>
+              </div>
+
+          </div>
+          <div class="col-xs-4"> <!--row 2-->
+
+              <!--Icon block-->
+              <div class="block text-center">
+                  <p><br></P>
+                  <img id="iWeatherIcon" src="//cdn.apixu.com/weather/64x64/day/143.png">
+                  <p><br></P>
+                  <p id="conditionText"></p>
+              </div>
+
+          </div>
+
+          <div class="col-xs-4"> <!--row 3-->
+
+
+              <!--Temperature block-->
+              <div class="block text-center">
+                  <p class="redText">Current temperature is: </p>
+                  <p class="redText"id="pTemp"> </p>
+                  <p class="redText">Feels like: </p>
+                  <p class="redText"id="pFeel"> </p>
+                  <button id="buttonFC" onclick="farenheitToCelcius()">Temperature in Farenheit</button>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  </body>
